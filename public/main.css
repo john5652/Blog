@@ -1,0 +1,26 @@
+.error-border {
+	border: solid red 2px;
+}
+
+body { 
+    padding-top: 65px; 
+}
+
+.colors {
+	background: white;
+/*	border: none;*/
+}
+
+.deletee {
+	position: absolute;
+	right:    0;
+	bottom:   0;
+}
+
+.delete {
+	position: relative;
+}
+
+p {
+    text-indent: 50px;
+}
