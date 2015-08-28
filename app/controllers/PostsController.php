@@ -2,6 +2,12 @@
 
 class PostsController extends \BaseController {
 
+	public function __construct()
+	{
+		parent::__construct(); 
+		$this->beforeFilter('auth', array('except' => array('index', 'show'))); 
+	}
+
 	/**
 	 * Display a listing of the resource.
 	 *
@@ -9,9 +15,26 @@ class PostsController extends \BaseController {
 	 */
 	public function index()
 	{
-		$posts = Post::with('user')->paginate(4);
-		return View::make('posts.index')->with('posts', $posts);
+		// $posts = Post::with('user')->paginate(4);
+		// return View::make('posts.index')->with('posts', $posts);
+
+		if(Input::has('search')) {
+			$search = Input::get('search');
+			$posts = Post::with('user')->where('title', 'LIKE', "%{$search}%")
+							->orWhere('body', 'LIKE', "%{$search}%")
+							->orderBy('title', 'asc')
+							->paginate(5);
+							if($posts->count() == 0) {
+								Session::flash('errorMessage', 'Search not found');
+								return Redirect::action('PostsController@index');
+							}
+			return View::make('posts.index')->with('posts', $posts);
+		} else {
+			$posts = Post::with('user')->paginate(5);
+			return View::make('posts.index')->with('posts', $posts);
+		}
 	}
+
 
 
 	/**
@@ -47,6 +70,7 @@ class PostsController extends \BaseController {
 	       	$post= new Post();
 			$post->title = Input::get('title');
 			$post->body = Input::get('body');
+			$post->user_id = Auth::id(); 
 			$post->save();
 
 			Session::flash('successMessage', 'Post created succesfully!');

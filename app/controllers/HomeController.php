@@ -17,12 +17,44 @@ class HomeController extends BaseController {
 
 	public function showWelcome()
 	{
-		return View::make('hello');
+		return Redirect::action('PostsController@index');
 	}
 
-		public function showResume()
+	public function showResume()
 	{
 		return View::make('resume');
+	}
+
+		public function createPosts()
+	{
+		return View::make('posts.create');
+	}
+
+	public function showLogin()
+	{
+		return View::make('login');
+	}
+
+	public function doLogin()
+	{
+		$email = Input::get('email'); 
+		$password = Input::get('password'); 
+
+
+		if (Auth::attempt(array('email' => $email, 'password' => $password))) {
+			Session::flash('successMessage', 'Logged in succesfully!');
+			return Redirect::intended('/');
+		} else {
+			Session::flash('errorMessage', 'Logged in failed!'); 
+			return Redirect::action('HomeController@showLogin');
+		}
+	}
+
+	public function doLogout()
+	{
+		Auth::logout(); 
+		Session::flash('errorMessage', 'Logged out!'); 
+		return Redirect::to('/');
 	}
 
 }

@@ -13,8 +13,18 @@
 
 	<div class='delete'>
 		<a href="{{{ action('PostsController@edit', $post->id) }}}"><i class=" pull-right fa fa-pencil"> Edit Post</i></a>
-	<div>
-
+	</div>
 </div>
+
+<div class="well well-lg colors col-sm-offset-2 col-sm-8 col-md-8">
+		@include('partials.comments')
+</div>
+
+
+
+
+
+
 		        
+
 

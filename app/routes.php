@@ -14,6 +14,7 @@
 Route::get('/', 'HomeController@showWelcome');
 
 Route::get('/resume', 'HomeController@showResume');
+Route::get('/create', 'HomeController@createPosts');
 
 Route::resource('posts', 'PostsController');
 
@@ -22,6 +23,13 @@ Route::get('/portfolio', function()
 {
     return "This is my portfolio!";
 });
+
+Route::get('login', 'HomeController@showLogin'); 
+Route::post('login', 'HomeController@doLogin'); 
+Route::get('logout', 'HomeController@doLogout'); 
+
+
+
 
 Route::get('/sayhello/{name}', function($name)
 {
@@ -58,6 +66,3 @@ $post2->body  = 'The body for post number two.';
 $post2->save();
 
 });
-
-
-

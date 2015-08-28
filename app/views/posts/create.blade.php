@@ -2,11 +2,11 @@
 
 @section('content')
 
-	<form action="{{{ action('PostsController@store') }}}" method="POST" accept-charset="utf-8">
-		
+	{{ Form::open(array('action' => 'PostsController@store')) }}
+
 		@include('posts.create-edit-form')
 
-	</form>
+	{{Form::close()}}
 
 
 

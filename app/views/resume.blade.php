@@ -1,238 +1,749 @@
-@extends('layouts.master')
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-@section('title')
-  Johnathan's Resume
-@stop
+  <title>JChristopherson - Resume Portfolio</title>
 
-@section('content')
+  <!-- CSS -->
 
-	<title>Johnathan Resume</title>
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-  <style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      height: 200px ;
-      margin: auto;
-  }
+  <!-- Owl Carousel -->
+  <link href="/assets/css/owl.theme.css" rel="stylesheet">
+  <link href="/assets/css/owl.carousel.css" rel="stylesheet">
 
-  .section-bg-color {
-    background-color: #f3f5f8;
-}
-  </style>
+  <!-- Magnific-popup lightbox -->
+  <link href="/assets/css/magnific-popup.css" rel="stylesheet">
 
+  <!-- Simple text rotator -->
+  <link href="/assets/css/simpletextrotator.css" rel="stylesheet">
 
-    <section id="about" class="about-4 about-4_bg section-bg-color rel-img" data-top-bottom="background-position: 0px 200px;" data-bottom-top="background-position: 0px -675px">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-offset-1 col-md-11 padding-top-130 padding-bottom-100">
-            <h1 class="big-heading heading heading-underlined black">Full Stack Software Engineer</h1>
-            <p>I have a passion for turning people's great ideas into reality and have the skillset necessary to make it happen.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-          <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-md-5 padding-top-130 padding-bottom-130">
-            <ul class="nav nav-tabs small list-inline primary-typo">
-              <li class="active">
-                <a data-toggle="tab" href="#tab1">Design</a>
-              </li>
-              <li class="">
-                <a data-toggle="tab" href="#tab2">Development</a>
-              </li>
-            </ul>
+  <!-- Animate css -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-              <div id="tab1" class="tab-pane fade active in">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="ion-iphone large-icon"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">Mobile First</h5>
-                        <p>Nowadays, with screen sizes and resolutions varying greatly, it has become essential to ensure that when developing a website or application that the interface remains user friendly no matter the device. Something I take seriously when developing applications.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="ion-social-javascript large-icon"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">Javascript</h5>
-                        <p>Javascript is perhaps the most dynamic of programming languages that exist and whether you need complex animations or a site built using AngularJs, I can integrate it into an application to suit your needs.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="ion-cube large-icon"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">Clean & Modern Design</h5>
-                        <p>The design and layout of a website is an integral part of attracting users and keeping traffic driven to the site, with that in mind I work extensively on the "Front-End" of the site utilizing clean and modern arcitecture to ensure that your visual specifications are met.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div id="tab2" class="tab-pane fade">
-                <div class="row">
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="fa fa-code fa-4x"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">PHP & Laravel</h5>
-                        <p>For those that need something more than just a beautiful website, I am also a software enginner and can develop an application for virtually anything that someone may need. I make use of the Laravel PHP Framework as it allows me to build an application in a proficient amount of time and is fun to use.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="fa fa-database fa-4x"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">MySQL Databases</h5>
-                        <p>For 'Back-End' work I use MySQL databases to store data</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-12 col-md-12 margin-top-40">
-                    <div class="service-2-content space-reduced">
-                      <div class="service-2-icon">
-                        <i class="fa fa-linux fa-4x"></i>
-                      </div>
-                      <div class="service-2-text">
-                        <h5 class="heading heading-underlined">LEMP</h5>
-                        <p><strong>ABBR.</strong>(Linux,Nginx,MySql,PHP), I am a LEMP software developer as you might have guessed from reading my other descriptions regarding development. I really enjoy using this stack and find that it is very efficient when used for application development.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-offset-1 col-md-6 padding-left-130 margin-200 padding-bottom-120 padding-top-120 visible-md visible-lg white">
-            <div class="section-heading">
-              <h2 class="heading heading-underlined">Solutions</h2>
-              <p class="additional-heading">How I build applications</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Custom styles CSS -->
+  <link href="/assets/css/style.css" rel="stylesheet" media="screen">
 
-    <section id="contact-bar" class="contact-bar section-bg-color">
-      <div class="container">
-        <div class="row margin-70">
-          <div class="col-md-4 margin-60">
-            <div class="contact-content">
-              <div class="contact-icon">
-                <i class="ion-paper-airplane medium-icon"></i>
-              </div>
-              <div class="contact-details">
-                <h5 class="contact-heading-text">EMAIL</h5>
-                <p>johnathan.christopherson@live.com</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 margin-60"></div>
-          <div class="col-md-4 margin-60">
-            <div class="contact-content">
-              <div class="contact-icon">
-                <i class="ion-iphone medium-icon"></i>
-              </div>
-              <div class="contact-details">
-                <h5 class="contact-heading-text">Mobile Number</h5>
-                <p>(210) 632-5789</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
-    <section id="contact" class="contact">
-      <div class="container-fluid">       
-        <div class="row">
-          <div class="col-sm-12 col-md-6 no-padding">
-          </div>
-          <div class="padding-top-130 padding-bottom-110 padding-left-30 padding-right-30">
-            <div class="section-heading">
-              <h2 class="heading" align="center">Contact</h2>
-              <p class="additional-heading"  align="center">Have an idea? I'm currently taking requests for projects. Fill out the form below and i will respond usually within 24 hours.</p>
-            </div>
+<!-- Latest compiled and minified JavaScript -->
+</head>
+<body>
 
+  <div class="wrapper">
 
-            <form method="POST" action="http://jdgarza.com/sendMail" accept-charset="UTF-8" id="contactForm" class="contact-form"><input name="_token" type="hidden" value="DRwKRR2eY2L4De0Xi3GXXBWMrdNjKYcviEU5MRNZ">
-              <div class="row">
-                <div class="col-xs-12">
-                  <div class="control-group">
-                    <div class="form-group floating-label-form-group controls">
-                      <input type="text" class="form-control" placeholder="Name *" id="name" name="name" required data-validation-required-message="Please enter your name.">
-                      <p class="help-block text-danger required-alert"></p>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="form-group floating-label-form-group controls">
-                      <input type="email" class="form-control" placeholder="Email Address *" id="email" required data-validation-required-message="Please enter your email address." name="email">
-                      <p class="help-block text-danger required-alert"></p>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="form-group floating-label-form-group controls">
-                      <textarea rows="4" class="form-control" placeholder="Message *" id="message" name="message" required data-validation-required-message="Please enter a message."></textarea>
-                      <p class="help-block text-danger required-alert"></p>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group col-xs-12 margin-20">
-                  <button type="submit" class="btn btn-default primary-typo">SUBMIT</button>
-                </div>                
-                <div class="clearfix"></div>
-                <div class="text-left clearfix">
-                  <div id="success"></div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>        
-      </div>
-    </section>
+    <!-- Preloader -->
 
-<div id="footer-area" class="footer">
-      <div class="container">
-        <div class="footer-social text-center">
-          <ul class="social-icons small list-inline">
-            <li><a href="https://www.linkedin.com/profile/view?id=AAIAABeNZyIB4DwbO8rUlcx6DEiGIk3Y6YKovpE&trk=nav_responsive_tab_profile" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/john5652" target="_blank">GitHub</a></li>
-            <li><a href="">CodeUp Profile</a></li>
-          </ul>
-        </div>
-        <div class="separator separator_center footer-sep">
-          <span class="sep_holder sep_holder_r"><span class="sep_line"></span></span>
-        </div>  
-        <div id="colophon" class="footer-colophon text-center">
-          <p class="site-info small">Johnathan Christopherson Design & Development 2015</p>
-        </div>
+    <div id="preloader">
+      <div id="status">
+        <div class="status-mes"><h4>Johnathan Christopherson</h4></div>
       </div>
     </div>
 
-      </div>
-  
-  <div class="throbbers_loader">
-    <div class="throbber">#johnslife</div>
-  </div>
+    <!-- Navigation start -->
 
-@stop
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Johnathan Christopherson</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#intro">home</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Navigation end -->
+
+    <!-- Intro section start -->
+
+    <section id="intro" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+
+            <div class="hello wow bounceInDown">
+              <h1>Hello, I'm Johnathan Christopherson</h1>
+              <h3><span class="rotate">Entry Level | Full-Stack Developer | Java Programmer </span></h3>
+            </div>
+
+            <a href="#profile">
+              <div class="mouse-icon">
+                <div class="wheel"></div>
+              </div>
+            </a>
+
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Intro section end -->
+
+    <!-- Profile contact callout section -->
+
+    <section id="profile-contact">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-sm-4 wow bounceInLeft">
+            <div class="profile-item">
+              <i class="fa fa-envelope-o"></i>
+              <h5><a href="#">johnathan.christopherson@live.com</a></h5>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInUp">
+            <div class="profile-item">
+              <i class="fa fa-phone"></i>
+              <h5>(210)-632-5789</h5>
+            </div>
+          </div>
+
+          <div class="col-sm-4 wow bounceInRight">
+            <div class="profile-item">
+              <i class="fa fa-map-marker"></i>
+              <h5>405 Gatewood Cliff, Cibolo, TX</h5>
+            </div>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Profile contact callout section -->
+
+    <!-- Profile section start -->
+
+    <section id="profile" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Johnathan Christopherson</h2>
+            <p>Entry Level. Full-Stack Developer. Java Programmer.</p>
+          </div>
+
+          <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
+            <img class="avatar" src="/images/coffee.png" alt="">
+          </div>
+
+          <div class="col-md-3 col-sm-6 wow bounceInUp">
+
+            <div class="profile-widget">
+              <h3>Skillset</h3>
+
+              <h5>PHP</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>MySql</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Laravel</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>HTML / CSS3</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Java</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Javascript</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
+              <h5>Jquery</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+            </div>
+
+            <div class="profile-widget">
+              <h3>Social Profiles</h3>
+              <ul class="widget-social">
+                <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+              </ul>
+            </div>
+
+          </div><!-- .col-md-3 -->
+
+          <div class="col-md-6 col-sm-12 wow bounceInRight">
+            <h3>Profesional Profile</h3>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Profile section end -->
+
+    <!-- Callout section start -->
+
+    <section id="stats" class="callout">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 col-sm-12 hidden-xs wow bounceInLeft">
+            <h3>My Stats</h3>
+          </div>
+
+          <div class="col-md-3 col-sm-4 wow bounceInDown">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="32"></span></h2>
+              </div>
+              <h3>Cup of coffee</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 wow bounceInUp">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
+              </div>
+              <h3>Line of code</h3>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-4 wow bounceInRight">
+            <div class="stat">
+              <div class="stat-icon">
+                <h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="300"></span>+</h2>
+              </div>
+              <h3>Happy customers</h3>
+            </div>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Services section start -->
+
+    <section id="services" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>What i can do</h2>
+            <p>My Services.</p>
+          </div>
+
+          <div class="col-md-12">
+
+            <div class="row">
+
+              <div class="col-sm-4 wow bounceInLeft">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-pencil"></i>
+                  </div>
+                  <h4>Text rotator</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-image"></i>
+                  </div>
+                  <h4>Slideshow</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInRight">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-cog"></i>
+                  </div>
+                  <h4>Easy configure</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- .row -->
+
+            <div class="row">
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".2s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-code"></i>
+                  </div>
+                  <h4>Clear code</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".4s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-desktop"></i>
+                  </div>
+                  <h4>Responsive design</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
+                <div class="service">
+                  <div class="icon">
+                    <i class="fa fa-life-ring"></i>
+                  </div>
+                  <h4>Support</h4>
+                  <div class="text">
+                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- .row -->
+
+          </div><!-- .col-md-12 -->
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Services section end -->
+
+    <!-- Callout section start -->
+
+    <section class="callout">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-3 hidden-xs wow bounceInLeft">
+            <h3>My status</h3>
+          </div>
+
+          <div class="col-md-9 headline nomargin wow bounceInDown">
+            <h3>I'm currently available for freelance work.</h3>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Callout section end -->
+
+    <!-- Resume section start -->
+
+    <section id="resume" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Resume</h2>
+            <p>My education and experience.</p>
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row resume-items">
+
+          <div class="col-md-3 wow bounceInLeft">
+            <h3>Education</h3>
+          </div>
+
+          <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+            <h4>Computer science</h4>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Stanford University</h4>
+            <i class="fa fa-calendar"></i> 2013 - 2014
+            <hr class="visible-xs">
+          </div>
+
+          <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+            <h4>Visual designer</h4>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> St. Patrick University</h4>
+            <i class="fa fa-calendar"></i> 2013 - 2014
+            <hr class="visible-xs">
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row resume-items">
+
+          <div class="col-md-3 wow bounceInLeft">
+            <h3>Experience</h3>
+          </div>
+
+          <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+            <h4>Front-end developer / php programmer</h4>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Google</h4>
+            <i class="fa fa-calendar"></i> 2013 - 2014
+            <hr class="visible-xs">
+          </div>
+
+          <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+            <h4>C# programmer</h4>
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i> Microsoft</h4>
+            <i class="fa fa-calendar"></i> 2013 - 2014
+            <hr class="visible-xs">
+          </div>
+
+        </div><!-- .row -->
+
+        <div class="row">
+
+          <div class="col-md-6 col-md-offset-3 wow bounceInUp">
+            <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Resume section end -->
+
+    
+
+    <!-- Portfolio section start -->
+
+    <section id="portfolio" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInDown">
+            <h2>Portfolio</h2>
+            <p>My Projects.</p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <a href="/assets/images/p1.jpg" class="pop-up" title="Caption 1">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp">
+            <a href="https://vimeo.com/45830194" class="video-pop-up" title="Caption 2">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInRight">
+            <a href="/assets/images/p3.jpg" class="pop-up" title="Caption 3">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
+            <a href="/assets/images/p5.jpg" class="pop-up" title="Caption 4">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
+            <a href="/assets/images/p8.jpg" class="pop-up" title="Caption 5">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">  
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
+            <a href="/assets/images/p6.jpg" class="pop-up" title="Caption 6">
+              <div class="portfolio-item">
+                <div class="portfolio-item-preview">
+                  <img src="/images/whack-a-mole.png" alt="">
+                </div>
+                <div class="portfolio-item-description">
+                  <h3>Some work</h3>
+                  <p>Category</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Portfolio section end -->
+
+    <!-- Contact section start -->
+
+    <section id="contact" class="section">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12 headline wow bounceInLeft">
+            <h2>Contact Me</h2>
+            <p>I look forward to hearing from new opportunities.</p>
+          </div>
+
+          <div class="col-md-6 wow bounceInUp">
+
+            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+
+            <ul class="icon-list">
+              <li><i class="fa fa-fw fa-map-marker"></i>405 Gatewood Cliff, Cibolo, TX</li>
+              <li><i class="fa fa-fw fa-phone"></i>(210) 632 5789</li>
+              <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">johnathan.christopherson@live.com</a></li>
+              <li><i class="fa fa-fw fa-globe"></i><a href=""></a>My Website</li>
+            </ul>
+
+          </div>
+
+          <div class="col-md-6 wow bounceInRight">
+
+            <form id="contact-form" role="form">
+
+              <div class="form-group">
+                <label class="sr-only" for="c_name">Name</label>
+                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
+              </div>
+
+              <div class="form-group">
+                <label class="sr-only" for="c_email">Email address</label>
+                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-custom-1">
+                <i class="fa fa-bullhorn icon-before"></i> Send it
+              </button>
+
+            </form>
+
+            <div class="ajax-response"></div>
+
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </section>
+
+    <!-- Contact section end -->
+
+    <!-- Footer start -->
+
+    <footer id="footer">
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-md-12">
+            <p class="copy">
+              © 2015 Johnathan Christopherson, All Rights Reserved.
+            </p>
+          </div>
+
+        </div><!-- .row -->
+
+      </div><!-- .container -->
+
+    </footer>
+
+    <!-- Footer end -->
+
+  </div><!-- .wrapper -->
+
+  <!-- Javascript files -->
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- Background slider -->
+  <script src="/assets/js/jquery.backstretch.min.js"></script>
+  <!-- OwlCarousel -->
+  <script src="/assets/js/owl.carousel.min.js"></script>
+  <!-- Modal for portfolio -->
+  <script src="/assets/js/jquery.magnific-popup.min.js"></script>
+  <!-- Text rotator -->
+  <script src="/assets/js/jquery.simple-text-rotator.min.js"></script>
+  <!-- Waypoints -->
+  <script src="/assets/js/jquery.waypoints.js"></script>
+  <!-- CountTo  -->
+  <script src="/assets/js/jquery.countTo.js"></script>
+  <!-- WOW - Reveal Animations When You Scroll -->
+  <script src="/assets/js/wow.min.js"></script>   
+  <!-- Smooth scroll -->
+  <script src="/assets/js/smoothscroll.js"></script>
+  <!-- Fitvids -->
+  <script src="/assets/js/jquery.fitvids.js"></script>
+  <!-- Custom scripts -->
+  <script src="/assets/js/custom.js"></script>
+
+</body>
+</html>
