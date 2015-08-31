@@ -420,8 +420,8 @@
           </div>
 
           <div class="col-md-9 headline nomargin wow bounceInDown">
-            <h3>I'm currently available for freelance work.</h3>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <h3>I'm currently seeking full time employment.</h3>
+            <p>I look forward to finding a new home where my skills can be mentored and put to use for a new customer experience.</p>
             <a href="#contact" class="btn btn-default btn-custom-2 callout-btn"><i class="fa fa-paper-plane-o icon-before"></i> Contact me</a>
           </div>
 
@@ -456,25 +456,25 @@
 
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
             <h4>Computer science</h4>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <p>I am currently pursing a bachelors degree in Computer Science and will have my associates this coming spring.</p>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-            <h4><i class="fa fa-suitcase"></i> Stanford University</h4>
-            <i class="fa fa-calendar"></i> 2013 - 2014
+            <h4><i class="fa fa-suitcase"></i> St Philips</h4>
+            <i class="fa fa-calendar"></i> 2014 - Present
             <hr class="visible-xs">
           </div>
 
           <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
-            <h4>Visual designer</h4>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <h4>Full Stack Development</h4>
+            <p>Codeup is a 16 week boot camp creating software developers from the ground up. Codeup has taught me how to be a full stack web developer and provided me with the knowledge to continue my passion of programming. </p>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-            <h4><i class="fa fa-suitcase"></i> St. Patrick University</h4>
-            <i class="fa fa-calendar"></i> 2013 - 2014
+            <h4><i class="fa fa-suitcase"></i> Codeup</h4>
+            <i class="fa fa-calendar"></i> 2015
             <hr class="visible-xs">
           </div>
 
@@ -487,26 +487,38 @@
           </div>
 
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
-            <h4>Front-end developer / php programmer</h4>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <h4>Full Stack Developer</h4>
+            <p>During my time at Codeup I have made several applications using languages such as PHP,Javascript,CSS,HTML,MYSQL,  as well as using JQUERY and LARAVEL libraries. Some of the projects I have worked on are down below in my portfolio.</p>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-            <h4><i class="fa fa-suitcase"></i> Google</h4>
-            <i class="fa fa-calendar"></i> 2013 - 2014
+            <h4><i class="fa fa-suitcase"></i>Codeup</h4>
+            <i class="fa fa-calendar"></i> 2015
             <hr class="visible-xs">
           </div>
 
           <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
-            <h4>C# programmer</h4>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <h4>IT Support</h4>
+            <p>At Pearson Education I have implemented my skills as an IT Support technician, assisting up to 50 or more customers a day by phone focusing on troubleshooting system interface for State Test. </p>
             <hr class="hidden-xs">
           </div>
 
           <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
-            <h4><i class="fa fa-suitcase"></i> Microsoft</h4>
-            <i class="fa fa-calendar"></i> 2013 - 2014
+            <h4><i class="fa fa-suitcase"></i>Pearson Education</h4>
+            <i class="fa fa-calendar"></i> 2014 - 2015
+            <hr class="visible-xs">
+          </div>
+
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
+            <h4>Infantryman</h4>
+            <p>Serving in the United States Army has been one of the most rewarding experiences I have had teaching me core values that will last a lifetime. On a daily bases I was responsible for the overseeing of thousands of dollars worth of equipment, daily training requiring precision team work, as well as always leading by example. </p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i>United States Army</h4>
+            <i class="fa fa-calendar"></i> 2012 - 2014
             <hr class="visible-xs">
           </div>
 

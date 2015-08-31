@@ -34,7 +34,7 @@
 		 * Background image
 		/* ---------------------------------------------- */
 
-		$('#intro').backstretch(['images/coffee.png']);
+		$('#intro').backstretch(['images/limit.jpg']);
 
 		/* ---------------------------------------------- /*
 		 * Navbar
