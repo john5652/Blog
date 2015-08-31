@@ -1,0 +1,49 @@
+body {
+        text-align: center;
+}
+
+#board{     
+
+        
+        margin-left: auto;
+        margin-right: auto;
+        height: 540px;
+        width: 560px;
+        text-align: left;
+        padding-bottom: 50px;
+
+        
+      
+}
+
+.hole {
+    display:block;
+    width:30px;
+    height:50px;
+    padding:65px 78px;
+    outline:1px solid blue;
+    background:white;
+    float:left;
+}
+
+.fade {
+    /*background-image: url("willy.jpg");
+    background-size: 100%;*/
+    background-color: blue ;
+       
+}
+
+#keepscore {
+    
+    border: 3px solid blue;
+    background-color: lightblue;
+}
+
+.faded {
+    background-color: salmon;
+}
+
+body {
+    background-color: green;
+}
+

@@ -12,30 +12,25 @@
 */
 
 Route::get('/', 'HomeController@showWelcome');
-
 Route::get('/resume', 'HomeController@showResume');
+Route::get('/whackamole', 'HomeController@showWhack');
+Route::get('/simon_says', 'HomeController@showSimon');
+Route::get('/weather_map', 'HomeController@showWeather');
+
 Route::get('/create', 'HomeController@createPosts');
-
 Route::resource('posts', 'PostsController');
-
-
 Route::get('/portfolio', function()
 {
     return "This is my portfolio!";
 });
-
 Route::get('login', 'HomeController@showLogin'); 
 Route::post('login', 'HomeController@doLogin'); 
+Route::post('resume_contact', 'HomeController@sendEmail'); 
 Route::get('logout', 'HomeController@doLogout'); 
-
-
-
-
 Route::get('/sayhello/{name}', function($name)
 {
     return View::make('my-first-view')->with('name', $name);
 });
-
 Route::get('/rolldice/{guess}', function($guess)
 {
 	$random = mt_rand(1,6); 		

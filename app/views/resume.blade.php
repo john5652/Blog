@@ -541,43 +541,43 @@
             <p>My Projects.</p>
           </div>
 
-          <div class="col-md-4 col-sm-6 wow bounceInLeft">
-            <a href="/assets/images/p1.jpg" class="pop-up" title="Caption 1">
+                            <div class="col-md-4 col-sm-6 wow bounceInLeft">
+            <a href="{{action('HomeController@showWeather')}}" target="_blank" class="pop-up" title="Caption 1">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/whack-a-mole.png" alt="">
+                  <img src="/images/weather.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>Three day weather app for San Antonio</h3>
+                  <p>Created using Google API and Javascript</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp">
-            <a href="https://vimeo.com/45830194" class="video-pop-up" title="Caption 2">
+            <a href="{{action('HomeController@showSimon')}}" class="pop-up" title="Caption 2">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/whack-a-mole.png" alt="">
+                  <img src="/images/simple-simon.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>Simple Simon Says Game</h3>
+                  <p>Created using Javascript and CSS</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInRight">
-            <a href="/assets/images/p3.jpg" class="pop-up" title="Caption 3">
+            <a href="{{action('HomeController@showWhack')}}" class="pop-up" title="Caption 3">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/whack-a-mole.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>Classic Whack-A-Mole Game</h3>
+                  <p>Created using Javascript and CSS</p>
                 </div>
               </div>
             </a>
@@ -623,7 +623,6 @@
                 </div>
               </div>
             </a>
-          </div>
 
         </div><!-- .row -->
 
@@ -661,27 +660,11 @@
 
           <div class="col-md-6 wow bounceInRight">
 
-            <form id="contact-form" role="form">
+            {{ Form::open(array('action' => 'HomeController@sendEmail') ) }}
 
-              <div class="form-group">
-                <label class="sr-only" for="c_name">Name</label>
-                <input type="text" id="c_name" class="form-control" name="c_name" placeholder="Name">
-              </div>
+              @include('partials.contact')
 
-              <div class="form-group">
-                <label class="sr-only" for="c_email">Email address</label>
-                <input type="email" id="c_email" class="form-control" name="c_email" placeholder="E-mail">
-              </div>
-
-              <div class="form-group">
-                <textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Your message"></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-custom-1">
-                <i class="fa fa-bullhorn icon-before"></i> Send it
-              </button>
-
-            </form>
+            {{Form::close()}}
 
             <div class="ajax-response"></div>
 

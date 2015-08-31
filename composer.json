@@ -7,7 +7,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"fzaninotto/faker": "^1.5",
-		"guzzlehttp/guzzle": "~4.0"
+		"guzzlehttp/guzzle": "~5.0"
 	},
 	"require-dev": {
 		"barryvdh/laravel-debugbar": "1.8.*"

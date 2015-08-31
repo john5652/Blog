@@ -15,6 +15,28 @@ class HomeController extends BaseController {
 	|
 	*/
 
+	public function sendEmail()
+	{
+		$data = array(
+			'name' => Input::get('c_name'),
+			'email' => Input::get('c_email'),
+			'body' => Input::get('c_message')
+		); 
+
+		Mail::send('emails.resume_email', $data, function($message) {
+			$message->from(Input::get('c_email'), Input::get('c_name'));
+    		$message->to('johnathan.christopherson@live.com', 'Johnathan Christopherson');
+    		$message->subject('Resume Email');
+		});
+
+		Session::flash('successMessage', "Email sent succesfully!"); 
+		return Redirect::action('HomeController@showResume');
+
+
+	}
+			
+
+
 	public function showWelcome()
 	{
 		return Redirect::action('PostsController@index');
@@ -23,6 +45,22 @@ class HomeController extends BaseController {
 	public function showResume()
 	{
 		return View::make('resume');
+	}
+
+		public function showWhack()
+	{
+		return View::make('whack-a-mole');
+	}
+
+			public function showWeather()
+	{
+		return View::make('weather');
+	}
+
+
+	public function showSimon()
+	{
+		return View::make('simon-says');
 	}
 
 		public function createPosts()
