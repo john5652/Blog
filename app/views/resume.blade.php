@@ -234,7 +234,7 @@
               <ul class="widget-social">
                 <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
                 <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
                 <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
               </ul>
             </div>
@@ -288,9 +288,9 @@
           <div class="col-md-3 col-sm-4 wow bounceInRight">
             <div class="stat">
               <div class="stat-icon">
-                <h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="300"></span>+</h2>
+                <h2><i class="fa fa-child hidden-xs"></i><span class="timer" data-to="999">+</span>+</h2>
               </div>
-              <h3>Happy customers</h3>
+              <h3>Possibilities</h3>
             </div>
           </div>
 
@@ -556,7 +556,7 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp">
-            <a href="{{action('HomeController@showSimon')}}" class="pop-up" title="Caption 2">
+            <a href="{{action('HomeController@showSimon')}}" target="_blank" class="pop-up" title="Caption 2">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/simple-simon.png" alt="">
@@ -570,7 +570,7 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInRight">
-            <a href="{{action('HomeController@showWhack')}}" class="pop-up" title="Caption 3">
+            <a href="{{action('HomeController@showWhack')}}" target="_blank" class="pop-up" title="Caption 3">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/whack-a-mole.png" alt="">
@@ -584,21 +584,21 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".2s">
-            <a href="/assets/images/p5.jpg" class="pop-up" title="Caption 4">
+            <a href="{{action('PostsController@index')}}" target="_blank" class="pop-up" title="Caption 4">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/whack-a-mole.png" alt="">
+                  <img src="/images/blog.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3> #johnslife Blog</h3>
+                  <p>Created using Bootstrap and Laravel</p>
                 </div>
               </div>
             </a>
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
-            <a href="/assets/images/p8.jpg" class="pop-up" title="Caption 5">
+            <a href="/assets/images/p8.jpg" target="_blank" class="pop-up" title="Caption 5">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">  
                   <img src="/images/whack-a-mole.png" alt="">
@@ -612,7 +612,7 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
-            <a href="/assets/images/p6.jpg" class="pop-up" title="Caption 6">
+            <a href="/assets/images/p6.jpg" target="_blank" class="pop-up" title="Caption 6">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
                   <img src="/images/whack-a-mole.png" alt="">
