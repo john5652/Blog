@@ -312,7 +312,7 @@
 
           <div class="col-md-12 headline wow bounceInDown">
             <h2>What i can do</h2>
-            <p>My Services.</p>
+            <p>My Assets.</p>
           </div>
 
           <div class="col-md-12">
@@ -348,9 +348,9 @@
                   <div class="icon">
                     <i class="fa fa-cog"></i>
                   </div>
-                  <h4>Easy configure</h4>
+                  <h4>Secret Clearance</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p>Through my military career I have acquired a secret clearance through the U.S government.</p>
                   </div>
                 </div>
               </div>
@@ -390,7 +390,7 @@
                   </div>
                   <h4>Support</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p>Successfully provide excellent customer service, while approaching every problem in a professional manor.</p>
                   </div>
                 </div>
               </div>
@@ -488,7 +488,7 @@
 
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
             <h4>Full Stack Developer</h4>
-            <p>During my time at Codeup I have made several applications using languages such as PHP,Javascript,CSS,HTML,MYSQL,  as well as using JQUERY and LARAVEL libraries. Some of the projects I have worked on are down below in my portfolio.</p>
+            <p>During my time at Codeup through over 500+ hours of hands on experience  I have made several applications using languages such as PHP,Javascript,CSS,HTML,MYSQL, as well as using JQUERY and LARAVEL libraries. Some of the projects I have worked on are down below in my portfolio.</p>
             <hr class="hidden-xs">
           </div>
 
