@@ -659,7 +659,7 @@
 
           <div class="col-md-6 wow bounceInUp">
 
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <p>The form below will email me directly or you can contact me yourself by the phone number or email listed below.</p>
 
             <ul class="icon-list">
               <li><i class="fa fa-fw fa-map-marker"></i>405 Gatewood Cliff, Cibolo, TX</li>
