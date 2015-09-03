@@ -40,13 +40,13 @@
 	<div class="container well">
 		<h1 id="list_title">WoW Lister</h1>
 
-		<? if(isset($errors)) : ?>
+		<?php if(isset($errors)) : ?>
 			<ul>
-			<? foreach ($errors as $error) : ?>
+			<?php foreach ($errors as $error) : ?>
 				<li><? $error; ?></li>
-			<? endforeach; ?>
+			<?php endforeach; ?>
 			</ul>
-		<? endif; ?>
+		<?php endif; ?>
 
 		<div class="col-md-12">
 			<table class="table table-bordered">
@@ -59,24 +59,28 @@
 					<th>Image</th>
 				</tr>
 
-				<? foreach ($items as $item): ?>
-				<tr>
-					<td><?= $item['item_name']; ?></td>
-					<td><?= $item['item_type']; ?></td>
-					<td><?= date_format(date_create($item['date_listed']),'l, F j, Y'); ?></td>
-					<td><?= number_format($item['price'], 2); ?></td>
-					<td><?= $item['description']; ?></td>
-					<td><a href="http://www.wowhead.com/item=<?= $item['item_number']; ?>"></a></td>
-				</tr>	
-			<? endforeach; ?>
+
+				@foreach ($items as $item)
+					<tr>
+					    <td>{{{ $item->item_name }}}</td>
+					    <td>{{{ $item->item_type }}}</td>
+					    <td>{{ date('F d, Y', strtotime($item->date_listed)) }}</td>
+					    <td>{{{ $item->price }}}{{{ $item->unit }}}</td>
+					    <td>{{{ $item->description }}}</td>
+					    <td><a href="http://www.wowhead.com/item={{{ $item->item_number }}}"></a></td>
+					</tr>
+				@endforeach
 		</table>
 	</div>
-
-	
-	
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+			
+
+	
+	
+
 
