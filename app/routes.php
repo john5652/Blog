@@ -19,6 +19,7 @@ Route::get('/weather_map', 'HomeController@showWeather');
 
 Route::get('/create', 'HomeController@createPosts');
 
+Route::get('index', 'ItemsController@index'); 
 Route::get('items/login', 'ItemsController@showLogin');
 Route::post('items/login', 'ItemsController@doLogin'); 
 Route::get('items/logout', 'ItemsController@doLogout');
@@ -36,6 +37,14 @@ Route::get('login', 'HomeController@showLogin');
 Route::post('login', 'HomeController@doLogin'); 
 Route::post('resume_contact', 'HomeController@sendEmail'); 
 Route::get('logout', 'HomeController@doLogout');
+
+
+
+
+
+
+
+
 Route::get('/sayhello/{name}', function($name)
 {
     return View::make('my-first-view')->with('name', $name);
