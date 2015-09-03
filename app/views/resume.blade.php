@@ -164,7 +164,7 @@
           </div>
 
           <div class="col-md-3 col-sm-6 hidden-xs wow bounceInLeft">
-            <img class="avatar" src="/images/coffee.png" alt="">
+            <img class="avatar" src="/images/JohnC.jpg" alt="">
           </div>
 
           <div class="col-md-3 col-sm-6 wow bounceInUp">
@@ -243,8 +243,8 @@
 
           <div class="col-md-6 col-sm-12 wow bounceInRight">
             <h3>Profesional Profile</h3>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend. I am so happy, my dear friend.</p>
-            <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+            <p>I have a passion for helping people and solving problems, I have recently gotten into the world of programming and feel like I have found a home. Through my military experience I have learned discipline and precision teamwork. I am now directing the life lessons I have learned toward creating web applications and solving customer problems.</p>
+            <p>I hope to become part of a team of like minded people that are willing to push my skills to the limit and maximize results.</p>
           </div>
 
         </div><!-- .row -->
@@ -324,9 +324,9 @@
                   <div class="icon">
                     <i class="fa fa-pencil"></i>
                   </div>
-                  <h4>Text rotator</h4>
+                  <h4>Teamwork</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p>Through my hands on experience working from a fire team to an IT support team I have acquired the skills of precision team work and the importance of working together in my everyday workspace to maximize results.</p>
                   </div>
                 </div>
               </div>
@@ -336,9 +336,9 @@
                   <div class="icon">
                     <i class="fa fa-image"></i>
                   </div>
-                  <h4>Slideshow</h4>
+                  <h4>Customer Service</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p>Managing every client in a professional manor has made everyday work life very enjoyable and helps to understand the problem for quicker and more effective solutions.</p>
                   </div>
                 </div>
               </div>
@@ -350,7 +350,7 @@
                   </div>
                   <h4>Secret Clearance</h4>
                   <div class="text">
-                    <p>Through my military career I have acquired a secret clearance through the U.S government.</p>
+                    <p>Through my military career I have acquired a secret clearance through the U.S government and am now cleared to work with certain military documents and information.</p>
                   </div>
                 </div>
               </div>
@@ -364,9 +364,9 @@
                   <div class="icon">
                     <i class="fa fa-code"></i>
                   </div>
-                  <h4>Clear code</h4>
+                  <h4>Modern Design</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p> The design and layout of a website is a crucial part of any website. I make the beauty of a website through CSS,HTML, and BOOTSTRAP to attract the users and the user friendly functionality utilizing PHP and JAVASCRIPT to keep them coming.</p>
                   </div>
                 </div>
               </div>
@@ -376,9 +376,9 @@
                   <div class="icon">
                     <i class="fa fa-desktop"></i>
                   </div>
-                  <h4>Responsive design</h4>
+                  <h4>LARAVEL and JQUERY</h4>
                   <div class="text">
-                    <p>I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend.</p>
+                    <p>The use of LARAVEL and JQUERY libraries allow me to quickly and efficiently deliver web applications in a client preferred time span by using the power and swiftness of these frameworks. </p>
                   </div>
                 </div>
               </div>

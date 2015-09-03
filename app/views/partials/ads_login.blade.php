@@ -8,8 +8,6 @@
       <div class="container">
         <div class="row">
             <div class="col-sm-6 col-md-4 col-md-offset-4">
-
-
                 <div class="account-wall" id="login">
                   <h1 class="text-center login-title"> SIGN IN TO GO TO THE AUCTION </h1>
                     <img class="profile-img" src="/img/code_breaker.jpeg">
@@ -26,5 +24,7 @@
     </div>
 
     <html>
+
+
 
 

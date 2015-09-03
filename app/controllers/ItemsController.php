@@ -5,7 +5,7 @@ class ItemsController extends \BaseController {
 public function __construct()
 	{
 		parent::__construct(); 
-		$this->beforeFilter('wowAuth', array('except' => array('index', 'show', 'showLogin', 'doLogin', 'userCreate'))); 
+		$this->beforeFilter('wowAuth', array('except' => array('index', 'show', 'showLogin', 'doLogin', 'userCreate', 'storeUser'))); 
 	}
 
 	/**
