@@ -610,14 +610,14 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".4s">
-            <a href="/assets/images/p8.jpg" target="_blank" class="pop-up" title="Caption 5">
+            <a href="{{action('ItemsController@showLogin')}}" target="_blank" class="pop-up" title="Caption 5">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">  
-                  <img src="/images/whack-a-mole.png" alt="">
+                  <img src="/images/wowlister.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>WoW Lister</h3>
+                  <p>Originally created in PHP revamped to Laravel</p>
                 </div>
               </div>
             </a>

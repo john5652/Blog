@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Sign in to continue to Bootsnipp</h1>
+            <h1 class="text-center login-title">Sign in to continue to Ramble</h1>
             <div class="account-wall">
                 <img class="profile-img" src="/images/ramble.png">
                 <div class="form-signin">
@@ -16,7 +16,7 @@
                 <a href="#" class="pull-right need-help">Need help? </a><span class="clearfix"></span>
                 </div>
             </div>
-            <a href="#" class="text-center new-account">Create an account </a>
+            <a href="{{action('PostsController@userCreate')}}" class="text-center new-account">Create an account </a>
         </div>
     </div>
 </div>

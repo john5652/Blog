@@ -18,9 +18,11 @@ class CreateItemsTable extends Migration {
 			$table->string('item_name', 50);
 			$table->string('item_type', 50);
 			$table->date('date_listed');
-			$table->string('price', 10000);
-			$table->string('description', 2500);
+			$table->decimal('price');
+			$table->string('unit', 255);
+			$table->text('description');
 			$table->string('item_number', 50);
+			$table->timestamps();
 		});
 	}
 

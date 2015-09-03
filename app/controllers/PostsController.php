@@ -5,7 +5,7 @@ class PostsController extends \BaseController {
 	public function __construct()
 	{
 		parent::__construct(); 
-		$this->beforeFilter('auth', array('except' => array('index', 'show'))); 
+		$this->beforeFilter('auth', array('except' => array('index', 'show', 'userCreate', 'storeUser'))); 
 	}
 
 	/**
@@ -80,6 +80,33 @@ class PostsController extends \BaseController {
 	    }
 
 	
+	}
+
+	public function storeUser()
+	{
+		$user= new User();
+			$user->password = Input::get('password');
+			$user->email = Input::get('email');
+			$user->first_name = Input::get('first_name');
+			$user->last_name = Input::get('last_name');
+			$user->username = Input::get('username');
+			$user->address = Input::get('address');
+			$user->address_line_2 = Input::get('address_line_2');
+			$user->city = Input::get('city');
+			$user->state = Input::get('state');
+			$user->zip_code = Input::get('zip_code');
+			$user->phone = Input::get('phone');
+
+			$user->save();
+
+			Session::flash('successMessage', 'Account created succesfully! You may now login.');
+			return Redirect::action('HomeController@showLogin');
+
+	}
+
+				public function userCreate()
+	{
+		return View::make('posts.users_create');
 	}
 
 

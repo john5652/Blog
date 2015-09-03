@@ -13,9 +13,12 @@ class DatabaseSeeder extends Seeder {
 
 		DB::table('posts')->delete();
 		DB::table('users')->delete();
+		DB::table('items')->delete();
 
 		$this->call('UsersTableSeeder');
 		$this->call('PostSeeder');
+		$this->call('ItemsTableSeeder');
+		$this->call('CharactersTableSeeder');
 	}
 
 }

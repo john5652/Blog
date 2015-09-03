@@ -48,6 +48,21 @@ Route::filter('auth', function()
 	}
 });
 
+Route::filter('wowAuth', function()
+{
+	if (Auth::guest())
+	{
+		if (Request::ajax())
+		{
+			return Response::make('Unauthorized', 401);
+		}
+		else
+		{
+			return Redirect::action('ItemsController@showLogin');
+		}
+	}
+});
+
 
 Route::filter('auth.basic', function()
 {

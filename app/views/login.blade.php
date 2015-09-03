@@ -11,3 +11,5 @@
 	@include('partials.login_partial')
 
 {{ Form::close() }} 
+
+@stop

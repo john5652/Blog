@@ -92,7 +92,7 @@ class HomeController extends BaseController {
 	{
 		Auth::logout(); 
 		Session::flash('errorMessage', 'Logged out!'); 
-		return Redirect::to('/');
+		return Redirect::action('HomeController@showLogin');
 	}
 
 }
