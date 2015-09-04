@@ -338,7 +338,7 @@
                   </div>
                   <h4>Customer Service</h4>
                   <div class="text">
-                    <p>Managing every client in a professional manor has made everyday work life very enjoyable and helps to understand the problem for quicker and more effective solutions.</p>
+                    <p>Managing every client in a professional manner has made everyday work life very enjoyable and helps to understand the problem for quicker and more effective solutions.</p>
                   </div>
                 </div>
               </div>
