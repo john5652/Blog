@@ -36,27 +36,27 @@
 
 				<label for="item_name">Item Name</label>
 				<!-- below is a test to see if the form will use the input class ternary for sticky form -->
-				<input class="form-control" id="item_name" name="item_name" type="text" value="<? Input::has('item_name') ? Input::get('item_name') : ''; ?>" placeholder="ITEM NAME" min="1" max="200">
+				<input class="form-control" id="item_name" name="item_name" type="text" placeholder="ITEM NAME" min="1" max="200">
 
 				<label for="item_type">Item Type</label>
 
 				<!-- alternative syntax for sticky form -->
-				<input class="form-control" id="item_type" name="item_type" type="text" value="<? isset($_POST['item_type']) ? Input::get('item_type') : ''; ?>" placeholder="ITEM TYPE" min="1" max="200">
+				<input class="form-control" id="item_type" name="item_type" type="text" placeholder="ITEM TYPE" min="1" max="200">
 
 				<label for="date_listed">Date Listed</label>
-				<input class="form-control" id="date_listed" name="date_listed" type="date" value="<? ; ?>"placeholder="DATE LISTED" min="1" max="200">
+				<input class="form-control" id="date_listed" name="date_listed" type="date" placeholder="DATE LISTED" min="1" max="200">
 
 				<label for="price">Price</label>
-				<input class="form-control" id="price" name="price" value="<? ; ?>" type="number" placeholder="PRICE">
+				<input class="form-control" id="price" name="price"  type="number" placeholder="PRICE">
 
 				<label for="unit">Units</label>
-				<input class="form-control" id="unit" name="unit" value="<? ; ?>" placeholder="gold, silver, copper">
+				<input class="form-control" id="unit" name="unit" placeholder="gold, silver, copper">
 
 				<label for="description">Description</label>
-				<textarea class="form-control" id="description" name="description" value="<? ; ?>" placeholder="DESCRIPTION"min="1" max="2000"></textarea>
+				<textarea class="form-control" id="description" name="description" placeholder="DESCRIPTION"min="1" max="2000"></textarea>
 
 				<label for="item_number">Item Number</label>
-				<textarea class="form-control" id="item_number" name="item_number" value="<? ; ?>" placeholder="item_number"min="1" max="2000"></textarea>
+				<textarea class="form-control" id="item_number" name="item_number"  placeholder="item_number"min="1" max="2000"></textarea>
 				  
 			  </div>
 

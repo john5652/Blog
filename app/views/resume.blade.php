@@ -232,10 +232,9 @@
             <div class="profile-widget">
               <h3>Social Profiles</h3>
               <ul class="widget-social">
-                <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
-                <li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="https://twitter.com/helllo_john" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+                <li><a href="https://github.com/john5652" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                <li><a href="https://www.linkedin.com/profile/preview?locale=en_US&trk=prof-0-sb-preview-primary-button" target="_blank"><i class="fa fa-linkedin-square"></i></a></li>
               </ul>
             </div>
 
@@ -322,7 +321,7 @@
               <div class="col-sm-4 wow bounceInLeft">
                 <div class="service">
                   <div class="icon">
-                    <i class="fa fa-pencil"></i>
+                    <i class="fa fa-user-plus"></i>
                   </div>
                   <h4>Teamwork</h4>
                   <div class="text">
@@ -334,7 +333,7 @@
               <div class="col-sm-4 wow bounceInUp">
                 <div class="service">
                   <div class="icon">
-                    <i class="fa fa-image"></i>
+                    <i class="fa fa-thumbs-up"></i>
                   </div>
                   <h4>Customer Service</h4>
                   <div class="text">
@@ -346,7 +345,7 @@
               <div class="col-sm-4 wow bounceInRight">
                 <div class="service">
                   <div class="icon">
-                    <i class="fa fa-cog"></i>
+                    <i class="fa fa-file-text"></i>
                   </div>
                   <h4>Secret Clearance</h4>
                   <div class="text">
@@ -386,11 +385,11 @@
               <div class="col-sm-4 wow bounceInUp" data-wow-delay=".6s">
                 <div class="service">
                   <div class="icon">
-                    <i class="fa fa-life-ring"></i>
+                    <i class="fa fa-graduation-cap"></i>
                   </div>
-                  <h4>Support</h4>
+                  <h4>Eager to Learn</h4>
                   <div class="text">
-                    <p>Successfully provide excellent customer service, while approaching every problem in a professional manor.</p>
+                    <p>My eager to learn is constantly driving me to find new and better solutions while expanding my knowledge of the programming world.</p>
                   </div>
                 </div>
               </div>
@@ -527,7 +526,7 @@
         <div class="row">
 
           <div class="col-md-6 col-md-offset-3 wow bounceInUp">
-            <a href="#" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+            <a href="resume.pdf" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
           </div>
 
         </div><!-- .row -->
@@ -624,14 +623,14 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
-            <a href="/assets/images/p6.jpg" target="_blank" class="pop-up" title="Caption 6">
+            <a href="#" target="_blank" class="pop-up" title="Caption 6">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/whack-a-mole.png" alt="">
+                  <img src="/images/comingsoon2.00_jpg_srz" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Some work</h3>
-                  <p>Category</p>
+                  <h3>Coming Soon</h3>
+                  <p>Codeup Final Project (In Progress)</p>
                 </div>
               </div>
             </a>
