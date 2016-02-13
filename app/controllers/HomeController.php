@@ -73,6 +73,11 @@ class HomeController extends BaseController {
 		return View::make('login');
 	}
 
+		public function showProject()
+	{
+		return Redirect::to('http://www.resumesolutions.us');
+	}
+
 	public function doLogin()
 	{
 		$email = Input::get('email'); 

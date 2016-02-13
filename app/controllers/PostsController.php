@@ -47,6 +47,17 @@ class PostsController extends \BaseController {
 		return View::make('posts.create');
 	}
 
+	public function getManage()
+	{
+		return View::make('manage');
+	}
+
+		public function getList()
+	{
+		$posts = Post::all();
+		return Response::json($posts);
+	}
+
 
 	/**
 	 * Store a newly created resource in storage.
@@ -185,12 +196,19 @@ class PostsController extends \BaseController {
 			$post->body = Input::get('body');
 			$post->save();
 
-			Session::flash('successMessage', 'Post updated succesfully!');
-
-
-			return Redirect::action('PostsController@show', array($id));
+			if (Request::wantsJson()) {
+            	return Response::json(array('message' => 'Post updated successfully!'));
+	        } else {
+	        	Session::flash('successMessage', 'Post updated succesfully!');
+	           	return Redirect::action('PostsController@show', array($id));
+	        }
 		}
 	}
+
+			
+
+
+			
 
 
 	/**
@@ -211,9 +229,13 @@ class PostsController extends \BaseController {
 			App::abort(404); 
 		}
 
-		Session::flash('successMessage', 'Post deleted succesfully!');
+		Session::flash('successMessage', 'Post deleted successfully!');
 
-		return Redirect::action('PostsController@index');
+		if (Request::wantsJson()) {
+            return Response::json(array('message' => 'Post deleted successfully!'));
+        } else {
+            return Redirect::action('PostsController@index');
+        }
 	}
 
 

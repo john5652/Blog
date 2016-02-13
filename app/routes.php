@@ -16,8 +16,13 @@ Route::get('/resume', 'HomeController@showResume');
 Route::get('/whackamole', 'HomeController@showWhack');
 Route::get('/simon_says', 'HomeController@showSimon');
 Route::get('/weather_map', 'HomeController@showWeather');
+Route::get('/project', 'HomeController@showProject');
 
 Route::get('/create', 'HomeController@createPosts');
+
+Route::get('posts/manage', 'PostsController@getManage');
+Route::get('posts/list', 'PostsController@getList');
+
 
 Route::get('index', 'ItemsController@index'); 
 Route::get('items/login', 'ItemsController@showLogin');

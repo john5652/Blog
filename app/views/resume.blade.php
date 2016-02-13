@@ -138,7 +138,7 @@
           <div class="col-sm-4 wow bounceInRight">
             <div class="profile-item">
               <i class="fa fa-map-marker"></i>
-              <h5>405 Gatewood Cliff, Cibolo, TX</h5>
+              <h5>6710 Babcock Road, San Antonio, TX</h5>
             </div>
           </div>
 
@@ -167,10 +167,16 @@
             <img class="avatar" src="/images/JohnC.jpg" alt="">
           </div>
 
-          <div class="col-md-3 col-sm-6 wow bounceInUp">
+                    <div class="col-md-6 col-sm-12 wow bounceInRight">
+            <h3>Profesional Profile</h3>
+            <p>I have a passion for helping people and solving problems, I have recently gotten into the world of programming and feel like I have found a home. Through my military experience I have learned discipline and precision teamwork. I am now directing the life lessons I have learned toward creating web applications and solving customer problems.</p>
+            <p>I hope to become part of a team of like minded people that are willing to push my skills to the limit and maximize results.</p>
+          </div>
+
+          <div class="col-md-12 col-sm-6 wow bounceInUp">
 
             <div class="profile-widget">
-              <h3>Skillset</h3>
+              <h3>Skillsets</h3>
 
               <h5>PHP</h5>
               <div class="skill-bar">
@@ -212,6 +218,14 @@
                 <div class="skill-rate-off"></div>
               </div>
 
+              <h5>.NET</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+
               <h5>Javascript</h5>
               <div class="skill-bar">
                 <div class="skill-rate-on"></div>
@@ -229,6 +243,16 @@
               </div>
             </div>
 
+               <h5>DNN</h5>
+              <div class="skill-bar">
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-on"></div>
+                <div class="skill-rate-off"></div>
+                <div class="skill-rate-off"></div>
+              </div>
+            </div>
+
+
             <div class="profile-widget">
               <h3>Social Profiles</h3>
               <ul class="widget-social">
@@ -240,11 +264,6 @@
 
           </div><!-- .col-md-3 -->
 
-          <div class="col-md-6 col-sm-12 wow bounceInRight">
-            <h3>Profesional Profile</h3>
-            <p>I have a passion for helping people and solving problems, I have recently gotten into the world of programming and feel like I have found a home. Through my military experience I have learned discipline and precision teamwork. I am now directing the life lessons I have learned toward creating web applications and solving customer problems.</p>
-            <p>I hope to become part of a team of like minded people that are willing to push my skills to the limit and maximize results.</p>
-          </div>
 
         </div><!-- .row -->
 
@@ -623,14 +642,14 @@
           </div>
 
           <div class="col-md-4 col-sm-6 wow bounceInUp" data-wow-delay=".6s">
-            <a href="#" target="_blank" class="pop-up" title="Caption 6">
+            <a href="{{action('HomeController@showProject')}}" target="_blank" class="pop-up" title="Caption 6">
               <div class="portfolio-item">
                 <div class="portfolio-item-preview">
-                  <img src="/images/comingsoon2.00_jpg_srz" alt="">
+                  <img src="/images/final.png" alt="">
                 </div>
                 <div class="portfolio-item-description">
-                  <h3>Coming Soon</h3>
-                  <p>Codeup Final Project (In Progress)</p>
+                  <h3>Resume Solutions</h3>
+                  <p>Codeup Final Project</p>
                 </div>
               </div>
             </a>
