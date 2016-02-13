@@ -504,9 +504,38 @@
             <h3>Experience</h3>
           </div>
 
+
+
           <div class="col-md-6 col-sm-8 resume-item wow bounceInUp">
+            <h4>Jr. Web Developer</h4>
+              <p>Completes assigned programming tasks to support various DoD
+              websites, tasks mainly focus on updating or changing current DNN
+              modules to provide client satisfaction.
+              </br> </br>
+              Primary objective as a Jr. Web Developer is to deliver support to the
+              client in making it efficient and easy in displaying not only the content
+              but the functionality requested in the various sites that we work with.
+              Implemented various languages on a daily basis to include .NET, C#,
+              Java Script, JQuery, HTMl, and CSS to complete assigned tickets.
+              </br></br>
+              Through the Jira Ticketing system and the DNN content service manager
+              I successfully completed all tasks in a timely manner.
+              In addition to completing tasks assigned to me through the Jira ticketing
+              system, I am also tasked with improving my skills every day. Immersed
+              in new challenges on a daily basis I continue to solve the problems I am
+              faced with and learn to become an asset of the team.</p>
+            <hr class="hidden-xs">
+          </div>
+
+          <div class="col-md-3 col-sm-4 resume-place wow bounceInRight">
+            <h4><i class="fa fa-suitcase"></i>Omnitec Solutions</h4>
+            <i class="fa fa-calendar"></i> 2015 - Present
+            <hr class="visible-xs">
+          </div>
+
+                              <div class="col-md-6 col-md-offset-3 col-sm-8 resume-item wow bounceInUp">
             <h4>Full Stack Developer</h4>
-            <p>During my time at Codeup through over 500+ hours of hands on experience  I have made several applications using languages such as PHP,Javascript,CSS,HTML,MYSQL, as well as using JQUERY and LARAVEL libraries. Some of the projects I have worked on are down below in my portfolio.</p>
+            <p>During my time at Codeup through over 500+ hours of hands on experience  I have made several applications using languages such as PHP,Javascript,CSS,HTML,MYSQL, as well as using JQUERY and LARAVEL libraries. Some of the projects I have worked on are down below in my portfolio. </p>
             <hr class="hidden-xs">
           </div>
 
@@ -539,6 +568,7 @@
             <i class="fa fa-calendar"></i> 2012 - 2014
             <hr class="visible-xs">
           </div>
+
 
         </div><!-- .row -->
 
