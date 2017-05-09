@@ -580,7 +580,7 @@
         <div class="row">
 
           <div class="col-md-6 col-md-offset-3 wow bounceInUp">
-            <a href="resume.pdf" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
+            <a href="Resume.pdf" class="btn btn-default btn-custom-2"><i class="fa fa-cloud-download icon-before"></i> Download CV</a>
           </div>
 
         </div><!-- .row -->
