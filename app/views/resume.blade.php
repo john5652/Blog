@@ -70,7 +70,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#intro">home</a></li>
+            <li><a href="#intro">Home</a></li>
             <li><a href="#profile">Profile</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -133,14 +133,14 @@
           <div class="col-sm-4 wow bounceInUp">
             <div class="profile-item">
               <i class="fa fa-phone"></i>
-              <h5>(210)-632-5789</h5>
+              <h5>(210)-213-6951</h5>
             </div>
           </div>
 
           <div class="col-sm-4 wow bounceInRight">
             <div class="profile-item">
               <i class="fa fa-map-marker"></i>
-              <h5>6710 Babcock Road, San Antonio, TX</h5>
+              <h5>405 Gatewood Cliff, Cibolo, TX</h5>
             </div>
           </div>
 
@@ -295,7 +295,7 @@
               <div class="stat-icon">
                 <h2><i class="fa fa-coffee hidden-xs"></i><span class="timer" data-to="32"></span></h2>
               </div>
-              <h3>Cup of coffee</h3>
+              <h3>Cups of coffee</h3>
             </div>
           </div>
 
@@ -304,7 +304,7 @@
               <div class="stat-icon">
                 <h2><i class="fa fa-code hidden-xs"></i><span class="timer" data-to="999"></span></h2>
               </div>
-              <h3>Line of code</h3>
+              <h3>Lines of code</h3>
             </div>
           </div>
 
@@ -716,7 +716,7 @@
 
             <ul class="icon-list">
               <li><i class="fa fa-fw fa-map-marker"></i>405 Gatewood Cliff, Cibolo, TX</li>
-              <li><i class="fa fa-fw fa-phone"></i>(210) 632 5789</li>
+              <li><i class="fa fa-fw fa-phone"></i>(210) 213 6951</li>
               <li><i class="fa fa-fw fa-envelope-o"></i><a href="mailto:">johnathan.christopherson@live.com</a></li>
               <li><i class="fa fa-fw fa-globe"></i><a href=""></a>My Website</li>
             </ul>
