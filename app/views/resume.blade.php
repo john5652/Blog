@@ -39,6 +39,8 @@
 </head>
 <body>
 
+
+
   <div class="wrapper">
 
     <!-- Preloader -->
@@ -172,6 +174,9 @@
             <p>I have a passion for helping people and solving problems, I have recently gotten into the world of programming and feel like I have found a home. Through my military experience I have learned discipline and precision teamwork. I am now directing the life lessons I have learned toward creating web applications and solving customer problems.</p>
             <p>I hope to become part of a team of like minded people that are willing to push my skills to the limit and maximize results.</p>
           </div>
+
+          <div>thehe</div>
+          <p>many <b>sdf</b>sdfsd <b>sadfds</b>sdafds</p>
 
           <div class="col-md-12 col-sm-6 wow bounceInUp">
 
